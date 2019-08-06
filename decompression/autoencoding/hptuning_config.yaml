@@ -1,0 +1,45 @@
+trainingInput:
+  scaleTier: CUSTOM
+  masterType: standard_p100
+  hyperparameters:
+    goal: MAXIMIZE
+    hyperparameterMetricTag: segmented_corr
+    maxTrials: 75
+    maxParallelTrials: 1
+    enableTrialEarlyStopping: True
+    params:
+    - parameterName: sparsity-k
+      type: DOUBLE
+      minValue: 0.1
+      maxValue: 4.0
+      scaleType: UNIT_LINEAR_SCALE
+    - parameterName: lambdaW
+      type: DOUBLE
+      minValue: 0.05
+      maxValue: 1.0
+      scaleType: UNIT_LINEAR_SCALE
+    - parameterName: lambda-gene-correlation
+      type: DOUBLE
+      minValue: 0.001
+      maxValue: 10.0
+      scaleType: UNIT_LOG_SCALE
+    - parameterName: lambda-decode
+      type: DOUBLE
+      minValue: 0.000000001
+      maxValue: 0.000001
+      scaleType: UNIT_LOG_SCALE
+    - parameterName: lambda-tv
+      type: DOUBLE
+      minValue: 0.000000001
+      maxValue: 0.000001
+      scaleType: UNIT_LOG_SCALE
+    - parameterName: lambda-abundance-factor
+      type: DOUBLE
+      minValue: 0.001
+      maxValue: 0.1
+      scaleType: UNIT_LOG_SCALE
+    - parameterName: pixel-sparsity
+      type: DOUBLE
+      minValue: 0.1
+      maxValue: 0.75
+      scaleType: UNIT_LINEAR_SCALE
