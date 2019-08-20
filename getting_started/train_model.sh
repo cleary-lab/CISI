@@ -3,8 +3,8 @@ python ../decompression/autoencoding/module/run_task.py \
 	--train-files data/ \
 	--eval-files data/ \
 	--fovs 27-29 \
-	--train-steps 200 \
-	--decompress-steps 2000 \
+	--train-steps 100 \
+	--decompress-steps 1000 \
 	--num-layers 4 \
 	--lambda-decode 1.16e-8 \
 	--sparsity-k 2.5 \

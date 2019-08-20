@@ -1,8 +1,11 @@
 # CISI
-Composite In Situ Imaging (CISI) can be used to increase throughput (multiplexing over genes, and larger tissue volumes) in imaging transcriptomics. In a CISI experiment, we generate a series of composite images -- corresponding to linear combinations of genes, and made by simultaneous probing for multiple targets --
-which are decompressed based on the mathematics of compressed sensing.
+Composite In Situ Imaging (CISI) is a method developed to increase throughput (multiplexing over genes, and larger tissue volumes) in imaging transcriptomics. In a CISI experiment, we generate a series of composite images -- corresponding to linear combinations of genes, and made by simultaneous probing for multiple targets -- which are decompressed based on the mathematics of compressed sensing.
 
-# Computational Overview
+# Getting started
+
+Run a [demo](getting_started/) of the autoencoding-based decompression on composite data from our study.
+
+# Computational overview of the full analysis
 
 1. Follow the training steps to analyze snRNA-Seq data. This will generate a gene module dictionary and use simulation to select the best measurement compositions.
 
