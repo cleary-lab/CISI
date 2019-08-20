@@ -5,7 +5,7 @@ Here we'll run autoencoding-based decompression on a small amount of data used i
 ### Dependencies
 
 This code has been tested with python3.7 and tensorflow 1.14
-We use Anaconda to set up an appropriate environment:
+We use Anaconda to set up an appropriate environment (this may take a few minutes):
 
     conda create -n cisi_test tensorflow tensorflow-probability matplotlib skimage
     conda activate cisi_test
@@ -27,7 +27,7 @@ The input to training also include a few additional matrices:
 
 We include the autoencoder parameters that we used in the paper (as learned from hyperparameter testing; see README in decompression/autoencoding) in train_model.sh. Feel free to play with these to see how the results change.
 
-To run the analysis, first train the autoencoder on a couple fields of view and save the output of decompression as numpy arrays.
+To run the analysis, first train the autoencoder on a couple fields of view and save the output of decompression as numpy arrays (this may take a few minutes).
 
     bash train_model.sh
 
