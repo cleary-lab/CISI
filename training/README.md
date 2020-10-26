@@ -42,7 +42,12 @@ Steps to run simulations:
 7. Calculate correlations between all selected genes:
 
 	$ python make_correlations.py \
-	--all-genes data/labels.all_genes.npy \
-	--selected-genes data/selected_genes.txt \
-	--datapath data/data.tpm.npy \
+	--datapath data/data.selected_genes.npy \
+	--savepath data/
+
+
+8. Calculate conditional probabilities of expression:
+
+	$ python make_conditional_probability.py \
+	--datapath data/data.selected_genes.npy \
 	--savepath data/
